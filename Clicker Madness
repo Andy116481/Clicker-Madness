@@ -1,0 +1,10 @@
+getgenv().Tap = true
+
+local modPath = require(game:GetService("Players").bloons4441.PlayerScripts.Aero.Controllers.UI.Click)
+
+spawn(function()
+    while getgenv().Tap == true do
+        wait()
+        modPath:Click()
+    end
+end)
